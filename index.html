@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
+    <h1>Current _ Exchange (USD, KRW, CND)</h1>
     <div class="exchange-box">
       <div class="dropdown">
         <button class="dropbtn" id="from-button">USD</button>
@@ -19,27 +19,27 @@
         </div>
       </div>
       <div class="input-area">
-        <input type="number" id="from-input" onkeyup="convert()"/>
+        <input type="number" id="from-input" onkeyup="convert()" />
         <div>dollars</div>
       </div>
     </div>
 
-    <h1> = </h1> 
+    <h1>=</h1>
 
     <div class="exchange-box">
-        <div class="dropdown">
-          <button class="dropbtn" id="to-button">USD</button>
-          <div class="dropdown-content" id="to-currency-list">
-            <a href="#">USD</a>
-            <a href="#">KRW</a>
-            <a href="#">CND</a>
-          </div>
-        </div>
-        <div class="input-area">
-          <input type="number" id="to-input"/>
-          <div>dollars</div>
+      <div class="dropdown">
+        <button class="dropbtn" id="to-button">USD</button>
+        <div class="dropdown-content" id="to-currency-list">
+          <a href="#">USD</a>
+          <a href="#">KRW</a>
+          <a href="#">CND</a>
         </div>
       </div>
+      <div class="input-area">
+        <input type="number" id="to-input" />
+        <div>dollars</div>
+      </div>
+    </div>
 
     <script src="main.js"></script>
   </body>
